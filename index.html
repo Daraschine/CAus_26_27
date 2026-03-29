@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centralausschuss Zofingia HSG 2026–2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     LAYER 1: INTRO ANIMATION
+═══════════════════════════════════════════════════════════ -->
+<div id="zofingia-layer">
+  <div class="stage" id="stage">
+    <div class="intro-title" id="intro-title">
+      <span class="intro-title-de">Der nächste Centralausschuss</span>
+      <span class="intro-title-sep">·</span>
+      <span class="intro-title-fr">Le prochain Comité central</span>
+    </div>
+    <div class="layer" id="shieldLayer">
+      <img id="shieldImg" src="assets/logos/CAus_Logo_PNG_weiss.png" alt="Zofingia Wappen">
+    </div>
+    <div class="layer" id="circleLayer">
+      <img id="circleImg" src="assets/logos/CAus_Logo_version_ohne_Logo_weiss.png" alt="Zofingia CAus Logo">
+    </div>
+  </div>
+  <div class="hint" id="hint" data-de="Klicken zum Fortfahren" data-fr="Cliquez pour continuer">Klicken zum Fortfahren</div>
+  <button class="replay-btn" id="replayBtn" data-de="Nochmals abspielen" data-fr="Rejouer">Nochmals abspielen</button>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     LAYER 2: MAIN BOARD
+═══════════════════════════════════════════════════════════ -->
+<div id="ca-layer">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <img class="topbar-logo" src="assets/logos/CAus_Logo_PNG_weiss.png" alt="Zofingia HSG Logo">
+    <div class="topbar-text">
+      <div class="topbar-title" data-de="Centralausschuss Zofingia HSG" data-fr="Comité Central Zofingia HSG">Centralausschuss Zofingia HSG</div>
+      <div class="topbar-year">2026 – 2027</div>
+    </div>
+    <!-- Language toggle -->
+    <div class="lang-toggle" id="langToggle" title="Sprache / Langue">
+      <span class="lang-opt" data-lang="de">DE</span>
+      <span class="lang-sep">/</span>
+      <span class="lang-opt" data-lang="fr">FR</span>
+    </div>
+  </header>
+
+  <!-- BOARD GRID -->
+  <main class="board">
+    <div class="row">
+
+      <!-- m1 -->
+      <div class="shield-card" id="card-m1" onclick="openModal('m1')">
+        <div class="shield-wrap">
+          <svg viewBox="0 0 148 172" xmlns="http://www.w3.org/2000/svg">
+            <defs><clipPath id="clip-m1"><path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z"/></clipPath></defs>
+            <rect x="7" y="7" width="134" height="158" fill="#f5f0e8"/>
+            <image href="assets/photos/Zugi2.jpeg" x="7" y="7" width="134" height="158" preserveAspectRatio="xMidYMin slice" clip-path="url(#clip-m1)"/>
+            <path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z" fill="none" stroke="#b8922a" stroke-width="2.5"/>
+            <path d="M14,14 L134,14 L134,116 Q134,150 74,157 Q14,150 14,116 Z" fill="none" stroke="#b8922a" stroke-width="0.7" opacity="0.5"/>
+            <circle cx="7" cy="7" r="2.5" fill="#b8922a" opacity="0.55"/>
+            <circle cx="141" cy="7" r="2.5" fill="#b8922a" opacity="0.55"/>
+          </svg>
+        </div>
+        <div class="card-function" data-de="Centralpräsident" data-fr="Président central">Centralpräsident</div>
+        <div class="card-vulgo">Z!ugtzwang</div>
+      </div>
+
+      <!-- m2 -->
+      <div class="shield-card" id="card-m2" onclick="openModal('m2')">
+        <div class="shield-wrap">
+          <svg viewBox="0 0 148 172" xmlns="http://www.w3.org/2000/svg">
+            <defs><clipPath id="clip-m2"><path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z"/></clipPath></defs>
+            <rect x="7" y="7" width="134" height="158" fill="#f5f0e8"/>
+            <image href="assets/photos/Der_gutaussehende_Zone.jpg" x="7" y="7" width="134" height="158" preserveAspectRatio="xMidYMin slice" clip-path="url(#clip-m2)"/>
+            <path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z" fill="none" stroke="#b8922a" stroke-width="2.5"/>
+            <path d="M14,14 L134,14 L134,116 Q134,150 74,157 Q14,150 14,116 Z" fill="none" stroke="#b8922a" stroke-width="0.7" opacity="0.5"/>
+            <circle cx="7" cy="7" r="2.5" fill="#b8922a" opacity="0.55"/>
+            <circle cx="141" cy="7" r="2.5" fill="#b8922a" opacity="0.55"/>
+          </svg>
+        </div>
+        <div class="card-function" data-de="Centralaktuar" data-fr="Secrétaire central">Centralaktuar</div>
+        <div class="card-vulgo">Z!one</div>
+      </div>
+
+      <!-- m3 -->
+      <div class="shield-card" id="card-m3" onclick="openModal('m3')">
+        <div class="shield-wrap">
+          <svg viewBox="0 0 148 172" xmlns="http://www.w3.org/2000/svg">
+            <defs><clipPath id="clip-m3"><path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z"/></clipPath></defs>
+            <rect x="7" y="7" width="134" height="158" fill="#f5f0e8"/>
+            <image href="assets/photos/GnüssLinn.jpg" x="7" y="7" width="134" height="158" preserveAspectRatio="xMidYMin slice" clip-path="url(#clip-m3)"/>
+            <path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z" fill="none" stroke="#b8922a" stroke-width="2.5"/>
+            <path d="M14,14 L134,14 L134,116 Q134,150 74,157 Q14,150 14,116 Z" fill="none" stroke="#b8922a" stroke-width="0.7" opacity="0.5"/>
+            <circle cx="7" cy="7" r="2.5" fill="#b8922a" opacity="0.55"/>
+            <circle cx="141" cy="7" r="2.5" fill="#b8922a" opacity="0.55"/>
+          </svg>
+        </div>
+        <div class="card-function" data-de="Centralquästor" data-fr="Trésorier central">Centralquästor</div>
+        <div class="card-vulgo">Gnüss-Linn</div>
+      </div>
+
+      <!-- m4 -->
+      <div class="shield-card" id="card-m4" onclick="openModal('m4')">
+        <div class="shield-wrap">
+          <svg viewBox="0 0 148 172" xmlns="http://www.w3.org/2000/svg">
+            <defs><clipPath id="clip-m4"><path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z"/></clipPath></defs>
+            <rect x="7" y="7" width="134" height="158" fill="#f5f0e8"/>
+            <image href="assets/photos/FIXI.jpeg" x="7" y="7" width="134" height="158" preserveAspectRatio="xMidYMin slice" clip-path="url(#clip-m4)"/>
+            <path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z" fill="none" stroke="#b8922a" stroke-width="2.5"/>
+            <path d="M14,14 L134,14 L134,116 Q134,150 74,157 Q14,150 14,116 Z" fill="none" stroke="#b8922a" stroke-width="0.7" opacity="0.5"/>
+            <circle cx="7" cy="7" r="2.5" fill="#b8922a" opacity="0.55"/>
+            <circle cx="141" cy="7" r="2.5" fill="#b8922a" opacity="0.55"/>
+          </svg>
+        </div>
+        <div class="card-function" data-de="Centralfest Morpion" data-fr="Morpion de fête-central">Centralfest Morpion</div>
+        <div class="card-vulgo">fiXibus</div>
+      </div>
+
+    </div><!-- /row 1 -->
+
+    <div class="row">
+
+      <!-- m5 -->
+      <div class="shield-card" id="card-m5" onclick="openModal('m5')">
+        <div class="shield-wrap">
+          <svg viewBox="0 0 148 172" xmlns="http://www.w3.org/2000/svg">
+            <defs><clipPath id="clip-m5"><path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z"/></clipPath></defs>
+            <rect x="7" y="7" width="134" height="158" fill="#f5f0e8"/>
+            <image href="assets/photos/QCT.jpeg" x="7" y="7" width="134" height="158" preserveAspectRatio="xMidYMin slice" clip-path="url(#clip-m5)"/>
+            <path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z" fill="none" stroke="#b8922a" stroke-width="2.5"/>
+            <path d="M14,14 L134,14 L134,116 Q134,150 74,157 Q14,150 14,116 Z" fill="none" stroke="#b8922a" stroke-width="0.7" opacity="0.5"/>
+            <circle cx="7" cy="7" r="2.5" fill="#b8922a" opacity="0.55"/>
+            <circle cx="141" cy="7" r="2.5" fill="#b8922a" opacity="0.55"/>
+          </svg>
+        </div>
+        <div class="card-function" data-de="Centralseminar Morpion" data-fr="Morpion de séminaire-central">Centralseminar Morpion</div>
+        <div class="card-vulgo">Que-ce-tus</div>
+      </div>
+
+      <!-- m6 -->
+      <div class="shield-card" id="card-m6" onclick="openModal('m6')">
+        <div class="shield-wrap">
+          <svg viewBox="0 0 148 172" xmlns="http://www.w3.org/2000/svg">
+            <defs><clipPath id="clip-m6"><path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z"/></clipPath></defs>
+            <rect x="7" y="7" width="134" height="158" fill="#f5f0e8"/>
+            <image href="assets/photos/Zdi.jpg" x="7" y="7" width="134" height="158" preserveAspectRatio="xMidYMin slice" clip-path="url(#clip-m6)"/>
+            <path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z" fill="none" stroke="#b8922a" stroke-width="2.5"/>
+            <path d="M14,14 L134,14 L134,116 Q134,150 74,157 Q14,150 14,116 Z" fill="none" stroke="#b8922a" stroke-width="0.7" opacity="0.5"/>
+            <circle cx="7" cy="7" r="2.5" fill="#b8922a" opacity="0.55"/>
+            <circle cx="141" cy="7" r="2.5" fill="#b8922a" opacity="0.55"/>
+          </svg>
+        </div>
+        <div class="card-function" data-de="Centralblatt Morpion" data-fr="Morpion de journal central">Centralblatt Morpion</div>
+        <div class="card-vulgo">Z!de-nix</div>
+      </div>
+
+      <!-- m7 -->
+      <div class="shield-card" id="card-m7" onclick="openModal('m7')">
+        <div class="shield-wrap">
+          <svg viewBox="0 0 148 172" xmlns="http://www.w3.org/2000/svg">
+            <defs><clipPath id="clip-m7"><path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z"/></clipPath></defs>
+            <rect x="7" y="7" width="134" height="158" fill="#f5f0e8"/>
+            <image href="assets/photos/Torronté.jpeg" x="7" y="7" width="134" height="158" preserveAspectRatio="xMidYMin slice" clip-path="url(#clip-m7)"/>
+            <path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z" fill="none" stroke="#b8922a" stroke-width="2.5"/>
+            <path d="M14,14 L134,14 L134,116 Q134,150 74,157 Q14,150 14,116 Z" fill="none" stroke="#b8922a" stroke-width="0.7" opacity="0.5"/>
+            <circle cx="7" cy="7" r="2.5" fill="#b8922a" opacity="0.55"/>
+            <circle cx="141" cy="7" r="2.5" fill="#b8922a" opacity="0.55"/>
+          </svg>
+        </div>
+        <div class="card-function" data-de="Romand Morpion" data-fr="Morpion romand">Romand Morpion</div>
+        <div class="card-vulgo">Torronté</div>
+      </div>
+
+      <!-- m8 -->
+      <div class="shield-card" id="card-m8" onclick="openModal('m8')">
+        <div class="shield-wrap">
+          <svg viewBox="0 0 148 172" xmlns="http://www.w3.org/2000/svg">
+            <defs><clipPath id="clip-m8"><path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z"/></clipPath></defs>
+            <rect x="7" y="7" width="134" height="158" fill="#f5f0e8"/>
+            <image href="assets/photos/Kaschmir.jpg" x="7" y="7" width="134" height="158" preserveAspectRatio="xMidYMin slice" clip-path="url(#clip-m8)"/>
+            <path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z" fill="none" stroke="#b8922a" stroke-width="2.5"/>
+            <path d="M14,14 L134,14 L134,116 Q134,150 74,157 Q14,150 14,116 Z" fill="none" stroke="#b8922a" stroke-width="0.7" opacity="0.5"/>
+            <circle cx="7" cy="7" r="2.5" fill="#b8922a" opacity="0.55"/>
+            <circle cx="141" cy="7" r="2.5" fill="#b8922a" opacity="0.55"/>
+          </svg>
+        </div>
+        <div class="card-function" data-de="Central GFA Herrscher" data-fr="Maître central GFA">Central GFA Herrscher</div>
+        <div class="card-vulgo">Kaschmir</div>
+      </div>
+
+    </div><!-- /row 2 -->
+  </main>
+
+  <!-- VIDEO SECTION -->
+  <section class="video-section">
+    <div class="video-section-inner">
+      <p class="video-label" data-de="Zofingia HSG" data-fr="Zofingia HSG">Zofingia HSG</p>
+      <h2 class="video-title" data-de="Wer sind wir?" data-fr="Qui sommes-nous ?">Wer sind wir?</h2>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/UvAum-MQOgo"
+          title="Zofingia HSG"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    Zofingia · Patriae, Amicitiae, Litteris
+  </footer>
+
+</div><!-- /ca-layer -->
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     MODAL OVERLAY
+═══════════════════════════════════════════════════════════ -->
+<div class="overlay" id="overlay" onclick="handleOverlayClick(event)">
+  <div class="modal" id="modal">
+    <button class="modal-close" onclick="closeModal()" aria-label="Schliessen">✕</button>
+
+    <!-- Photo panel -->
+    <div class="modal-photo-panel" id="modal-photo-panel">
+      <img id="modal-photo" src="" alt="">
+      <div class="modal-photo-name" id="modal-photo-name"></div>
+    </div>
+
+    <!-- Left info panel -->
+    <div class="modal-left" id="modal-left">
+      <div class="modal-shield" id="modal-shield">
+        <svg viewBox="0 0 148 172" xmlns="http://www.w3.org/2000/svg">
+          <defs><clipPath id="clip-modal"><path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z"/></clipPath></defs>
+          <rect x="7" y="7" width="134" height="158" fill="#c0122a"/>
+          <image id="modal-shield-img" href="" x="7" y="7" width="134" height="158" preserveAspectRatio="xMidYMin slice" clip-path="url(#clip-modal)"/>
+          <path d="M7,7 L141,7 L141,118 Q141,158 74,165 Q7,158 7,118 Z" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2.5"/>
+        </svg>
+      </div>
+      <div class="modal-func" id="modal-func"></div>
+      <div class="modal-vulgo" id="modal-vulgo"></div>
+      <div class="modal-realname" id="modal-realname"></div>
+      <div class="modal-divider"></div>
+    </div>
+
+    <!-- Right facts panel -->
+    <div class="modal-right">
+      <div class="facts-heading" data-de="Zur Person" data-fr="À propos de la personne" id="facts-heading">Zur Person</div>
+      <div id="modal-facts"></div>
+    </div>
+
+  </div>
+</div>
+
+<script src="members.js"></script>
+<script src="modal.js"></script>
+<script src="animation.js"></script>
+<script src="i18n.js"></script>
+</body>
+</html>
