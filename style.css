@@ -180,31 +180,12 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 0.9rem 1.6rem;
+  padding: 0.6rem 1.6rem;
   border-bottom: 3px solid var(--red);
-  background: #fff;
+  background: var(--dark);
   position: sticky;
   top: 0;
   z-index: 50;
-}
-
-.topbar-logo {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  flex-shrink: 0;
-  /* logo is white — show on coloured bg or use a red box */
-  background: var(--red);
-  border-radius: 4px;
-  padding: 6px;
-}
-
-.topbar-text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-  flex: 1;
-  min-width: 0;
 }
 
 .topbar-title {
@@ -216,12 +197,28 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #fff;
 }
 
 .topbar-year {
   font-size: 0.72rem;
-  color: var(--red);
+  color: var(--gold);
   letter-spacing: 0.12em;
+}
+
+.topbar-logo {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.topbar-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  flex: 1;
+  min-width: 0;
 }
 
 /* Language toggle */
@@ -239,12 +236,12 @@ body {
   cursor: pointer;
   padding: 4px 8px;
   border-radius: 2px;
-  color: var(--muted);
+  color: rgba(255,255,255,0.5);
   transition: background 0.18s, color 0.18s;
   user-select: none;
 }
 
-.lang-opt:hover { color: var(--dark); }
+.lang-opt:hover { color: #fff; }
 
 .lang-opt.active {
   background: var(--red);
@@ -252,7 +249,7 @@ body {
 }
 
 .lang-sep {
-  color: var(--rule);
+  color: rgba(255,255,255,0.2);
   font-weight: 400;
 }
 

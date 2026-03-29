@@ -13,13 +13,13 @@
 
 (function () {
 
-  const INITIAL_PAUSE   = 1400;  // ms to show title before animation starts
-  const ACCEL_DURATION  = 0.85;  // s to reach max spin speed
-  const MAX_SPEED       = 1440;  // deg/s at peak
-  const FADE_DURATION   = 0.32;  // s for shield→circle crossfade
-  const DECEL_DURATION  = 0.55;  // s to slow down after crossfade
+  const INITIAL_PAUSE   = 1600;  // ms to show title before animation starts
+  const ACCEL_DURATION  = 1.8;  // s to reach max spin speed
+  const MAX_SPEED       = 1800;  // deg/s at peak
+  const FADE_DURATION   = 0.45;  // s for shield→circle crossfade
+  const DECEL_DURATION  = 0.9;  // s to slow down after crossfade
   const PULSE_WAIT      = 180;   // ms pause before pulse
-  const POST_PULSE_WAIT = 900;   // ms after pulse before fading to board
+  const POST_PULSE_WAIT = 1100;   // ms after pulse before fading to board
 
   const layer      = document.getElementById('zofingia-layer');
   const caLayer    = document.getElementById('ca-layer');

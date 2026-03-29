@@ -5,7 +5,7 @@
 const members = {
 
   m1: {
-    photo:    'assets/photos/Zlugi2.jpeg',
+    photo:    'assets/photos/Z!ugi2.jpeg',
     vulgo:    'Z!ugtzwang',
     realname: 'Luis Nägelin',
     func:     { de: 'Centralpräsident',   fr: 'Président central' },
@@ -33,7 +33,7 @@ const members = {
   },
 
   m2: {
-    photo:    'assets/photos/Der gutaussehende ZIone.jpg',
+    photo:    'assets/photos/Der gutaussehende Z!one.jpg',
     vulgo:    'Z!one',
     realname: 'Jan Huber',
     func:     { de: 'Centralaktuar', fr: 'Secrétaire central' },
