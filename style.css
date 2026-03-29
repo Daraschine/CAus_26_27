@@ -173,17 +173,11 @@ body  {
   z-index: 50;
 }
 
-.topbar-logo-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
 .topbar-logo {
   width: 288px;
   height: 288px;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
 .topbar-text {
