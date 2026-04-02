@@ -174,8 +174,8 @@ body  {
 }
 
 .topbar-logo {
-  width: 144px;
-  height: 144px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   flex-shrink: 0;
 }
