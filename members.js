@@ -8,7 +8,7 @@ const members = {
     photo:    'assets/photos/Z!ugi2.jpeg',
     vulgo:    'Z!ugtzwang',
     realname: 'Luis Nägelin',
-    func:     { de: 'Centralpräsident',   fr: 'Président central' },
+    func:     { de: 'Centralpräsident', fr: 'Président central' },
     facts: [
       {
         key: { de: 'Studium / Arbeit', fr: 'Études / Travail' },
@@ -18,6 +18,10 @@ const members = {
       {
         key: { de: 'Alter', fr: 'Âge' },
         val: { de: '27', fr: '27' }
+      },
+      {
+        key: { de: 'Herkunft', fr: 'Origine' },
+        val: { de: 'Oberdorf BL', fr: 'Oberdorf BL' }
       },
       {
         key: { de: 'Träume', fr: 'Rêves' },
@@ -48,6 +52,10 @@ const members = {
         val: { de: '30', fr: '30' }
       },
       {
+        key: { de: 'Herkunft', fr: 'Origine' },
+        val: { de: 'Arlesheim BL', fr: 'Arlesheim BL' }
+      },
+      {
         key: { de: 'Träume', fr: 'Rêves' },
         val: { de: 'Complete "The Seven Summits".',
                fr: 'Gravir les sept sommets.' }
@@ -74,6 +82,10 @@ const members = {
       {
         key: { de: 'Alter', fr: 'Âge' },
         val: { de: '29', fr: '29' }
+      },
+      {
+        key: { de: 'Herkunft', fr: 'Origine' },
+        val: { de: 'Reinach BL', fr: 'Reinach BL' }
       },
       {
         key: { de: 'Träume', fr: 'Rêves' },
@@ -104,6 +116,10 @@ const members = {
         val: { de: '25', fr: '25' }
       },
       {
+        key: { de: 'Herkunft', fr: 'Origine' },
+        val: { de: 'Homburg TG', fr: 'Homburg TG' }
+      },
+      {
         key: { de: 'Träume', fr: 'Rêves' },
         val: { de: 'Ein Haus am See und meine 100 Enkel spielen Cricket aufm Rasen.',
                fr: 'Une maison au bord du lac avec mes 100 petits-enfants jouant au cricket sur la pelouse.' }
@@ -130,6 +146,10 @@ const members = {
       {
         key: { de: 'Alter', fr: 'Âge' },
         val: { de: '24', fr: '24' }
+      },
+      {
+        key: { de: 'Herkunft', fr: 'Origine' },
+        val: { de: 'Goldach SG', fr: 'Goldach SG' }
       },
       {
         key: { de: 'Träume', fr: 'Rêves' },
@@ -160,6 +180,10 @@ const members = {
         val: { de: '28', fr: '28' }
       },
       {
+        key: { de: 'Herkunft', fr: 'Origine' },
+        val: { de: 'Hitzkirch LU', fr: 'Hitzkirch LU' }
+      },
+      {
         key: { de: 'Träume', fr: 'Rêves' },
         val: { de: 'Das Championsleaguefinale besuchen.',
                fr: 'Assister à la finale de la Ligue des champions.' }
@@ -186,6 +210,10 @@ const members = {
       {
         key: { de: 'Alter', fr: 'Âge' },
         val: { de: '23', fr: '23' }
+      },
+      {
+        key: { de: 'Herkunft', fr: 'Origine' },
+        val: { de: 'Aubonne VD', fr: 'Aubonne VD' }
       },
       {
         key: { de: 'Träume', fr: 'Rêves' },
@@ -216,6 +244,10 @@ const members = {
         val: { de: '27', fr: '27' }
       },
       {
+        key: { de: 'Herkunft', fr: 'Origine' },
+        val: { de: 'Berikon AG', fr: 'Berikon AG' }
+      },
+      {
         key: { de: 'Träume', fr: 'Rêves' },
         val: { de: 'Meine engsten Freunde als Nachbarn zu haben.',
                fr: 'Avoir mes meilleurs amis comme voisins.' }
@@ -223,7 +255,7 @@ const members = {
       {
         key: { de: 'Motivation für den CAus', fr: 'Motivation pour le CC' },
         val: { de: 'BBS (mit den Besten Bier saufen).',
-               fr: 'BBB (boire de la bière avec les meilleurs).' }
+               fr: 'BBM (boire de la bière avec les meilleurs).' }
       }
     ]
   }
